@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <title>My Blog.</title>
 </head>
 <body>
@@ -12,26 +16,45 @@
             <img src="logo.png" alt="logo" class="logo">
             <h1>FriendlyByte</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="">About me</a></li>
-                <li><a href="">My work</a></li>
-                <li><a href="">My achievements</a></li> 
-            </ul>
-        </nav>
     </header>
+        <div class="container">
+            <div class="menu">
+                <div class="menu_item"><a class="scroll" href="#aboutme">About me</a></div>
+                <div class="menu_item"><a class="scroll" href="#work">My work</a></div>
+                <div class="menu_item"><a class="scroll" href="#achieve">My achievements</a></div>
+            </div>
+            <div class="menu_small_icon">
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+            </div>
+            <div class="menu-small">
+                <div class="menu_small_item"><a class="scroll" href="#aboutme">About me</a></div>
+                <div class="menu_small_item"><a class="scroll" href="#work">My work</a></div>
+                <div class="menu_small_item"><a class="scroll" href="#achieve">My achievements</a></div>
+            </div>
+        </div>
     <main>
         <section>
-            <h2>About me</h2>
-            <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae suscipit ab libero hic dolorum quis, obcaecati consequuntur voluptatum minus. Pariatur, vel voluptas. Alias deserunt impedit laborum cumque, natus accusantium.</p>
+            <h2 id="aboutme">About me</h2>
+            <p class="main-text">Welcome to my blog. My alias is “Friendlybyte”. I am a Russian student of 6th grade. I am planning to learn to create websites and then apply for a job as a website designer or a website assembler. I have already completed 1 course of simple Web education which includes learning the HTML and CSS languages in detail and JS in much less detail, as not much time is given to it. Then, I have started a JS course, which only resides in programming the website, other than creating it.</p>
         </section>
         <section>
-            <h2>About me</h2>
+            <h2 id="work">My work (WIP)</h2>
             <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae suscipit ab libero hic dolorum quis, obcaecati consequuntur voluptatum minus. Pariatur, vel voluptas. Alias deserunt impedit laborum cumque, natus accusantium.</p>
         </section>
+        <section class="carousel">
+            <div class="slider">
+                <div><img src="images/0.jpg"></div>
+                <div><img src="images/1.jpg"></div>
+                <div><img src="images/2.jpg"></div>
+                <div><img src="images/3.jpg"></div>
+                <div><img src="images/4.jpg"></div>
+            </div>
+        </section>
         <section>
-            <h2>About me</h2>
-            <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae suscipit ab libero hic dolorum quis, obcaecati consequuntur voluptatum minus. Pariatur, vel voluptas. Alias deserunt impedit laborum cumque, natus accusantium.</p>
+            <h2 id="achieve">My achievements</h2>
+            <p class="main-text">I have already completed 5 grades at school with a perfect score of all “A+”’s and am going for another one. I am planning to go to the physical and mathematical class in our school, which will only boost my career in becoming a web developer. I also have countless minor awards from other IT schools. Five years later I will have graduated from the 11th grade of school and gone to a university. I am still not sure, which one. </p>
         </section>
     </main>
     <footer>

@@ -102,3 +102,16 @@ textarea {
 h2 {
     margin-bottom: 50px;
 }
+
+@media (max-width: 650px) {
+    a {
+        font-size: 14px;
+    }    
+    input {
+        width: 200px;
+        height: 20px;
+    }
+    textarea {
+        width: 300px;
+    }
+}
